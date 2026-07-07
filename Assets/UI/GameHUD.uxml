@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="GameHUDStyles.uss" />
+    <ui:VisualElement name="HUDContainer" class="hud-container">
+        
+        <ui:VisualElement name="TopSection" class="top-section">
+            <ui:Label text="00:00" name="TimerLabel" class="timer-label" />
+        </ui:VisualElement>
+        
+        <ui:VisualElement name="BottomSection" class="bottom-section">
+            <!-- Health Section -->
+            <ui:VisualElement name="HealthSection" class="hud-section">
+                <ui:Label text="100 / 100" name="HealthText" class="hud-value-text" />
+                <ui:ProgressBar value="100" high-value="100" name="HealthBar" class="hud-progress-bar health-bar" />
+            </ui:VisualElement>
+            
+            <!-- EXP Section -->
+            <ui:VisualElement name="ExpSection" class="hud-section exp-container">
+                <ui:Label text="LVL 1" name="LevelText" class="hud-value-text level-text" />
+                <ui:ProgressBar value="0" high-value="100" name="ExpBar" class="hud-progress-bar exp-bar" />
+                <ui:Label text="0 / 100" name="ExpText" class="hud-sub-text" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd">
+
+    <ui:Style src="PauseMenu.uss" />
+
+    <!-- Main Pause Menu View -->
+    <ui:VisualElement name="MenuView" class="overlay-bg">
+        <ui:VisualElement class="pausemenu-container">
+            <ui:Label text="PAUSED" class="pause-title" />
+            
+            <ui:Button name="ResumeButton" class="menu-button">
+                <ui:Label text="Resume" class="button-text" />
+            </ui:Button>
+
+            <ui:Button name="ExitButton" class="menu-button">
+                <ui:Label text="Exit to Main Menu" class="button-text" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <!-- Countdown View (Hidden by default, transparent background) -->
+    <ui:VisualElement name="CountdownView" class="countdown-container" style="display: none;">
+        <ui:Label name="CountdownLabel" text="3" class="countdown-text" />
+    </ui:VisualElement>
+
+</ui:UXML>

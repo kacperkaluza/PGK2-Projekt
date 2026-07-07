@@ -1,0 +1,25 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/UpgradeStyles.uss?fileID=7433441132597879392&amp;guid=3756bf279b811480aba50069b4eeac1f&amp;type=3#UpgradeStyles" />
+    <ui:VisualElement name="Overlay" class="overlay-bg">
+        <ui:VisualElement class="upgrade-container">
+            <ui:Button name="Card1" class="upgrade-row">
+                <ui:Label name="CardRarity" text="Common" class="rarity-badge" />
+                <ui:Label name="CardDesc" text="Gain &lt;color=#00FF00&gt;+1&lt;/color&gt; Extra Jumps" class="desc-text" enable-rich-text="true" />
+            </ui:Button>
+            
+            <ui:Button name="Card2" class="upgrade-row">
+                <ui:Label name="CardRarity" text="Common" class="rarity-badge" />
+                <ui:Label name="CardDesc" text="Gain &lt;color=#00FF00&gt;7.5%&lt;/color&gt; Silver Gain" class="desc-text" enable-rich-text="true" />
+            </ui:Button>
+
+            <ui:Button name="Card3" class="upgrade-row">
+                <ui:Label name="CardRarity" text="Common" class="rarity-badge" />
+                <ui:Label name="CardDesc" text="Gain &lt;color=#00FF00&gt;10%&lt;/color&gt; Crit Damage" class="desc-text" enable-rich-text="true" />
+            </ui:Button>
+
+            <ui:Button name="BtnIgnore" class="upgrade-row ignore-row">
+                <ui:Label text="Ignore Offers" class="ignore-text" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

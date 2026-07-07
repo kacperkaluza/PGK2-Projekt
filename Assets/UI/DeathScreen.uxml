@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
+>
+    <ui:Style src="DeathScreen.uss" />
+
+    <!-- Death overlay -->
+    <ui:VisualElement name="DeathOverlay" class="death-bg" style="display: none;">
+        
+        <ui:Label text="YOU DIED" class="death-title" />
+
+        <ui:VisualElement class="content-row">
+            <!-- Middle Summary -->
+            <ui:VisualElement class="stats-panel">
+                <ui:Label text="Game Summary" class="panel-title" />
+                <ui:Label name="LifetimeLabel" text="Lifetime: 00:00" class="stat-text" />
+                <ui:Label name="KillsLabel" text="Enemies Killed: 0" class="stat-text" />
+                <ui:Label name="LevelLabel" text="Level: 1" class="stat-text" />
+                <ui:Label name="DamageLabel" text="Damage Dealt: 0" class="stat-text" />
+            </ui:VisualElement>
+
+            <!-- Right Player Stats -->
+            <ui:VisualElement class="stats-panel">
+                <ui:Label text="Player Stats" class="panel-title" />
+                <ui:Label name="AttackDamageLabel" text="Attack Dmg: 0" class="stat-text" />
+                <ui:Label name="AttackSpeedLabel" text="Attack Speed: 0" class="stat-text" />
+                <ui:Label name="MaxHealthLabel" text="Max Health: 0" class="stat-text" />
+                <ui:Label name="ArmorLabel" text="Armor: 0" class="stat-text" />
+                <ui:Label name="CritChanceLabel" text="Crit Chance: 0%" class="stat-text" />
+                <ui:Label name="CritDamageLabel" text="Crit Dmg: 0%" class="stat-text" />
+                <ui:Label name="MoveSpeedLabel" text="Move Speed: 1.0" class="stat-text" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="death-menu-container">
+            <!-- Restart Button -->
+            <ui:Button name="RestartButton" class="menu-button">
+                <ui:Label text="Restart" class="button-text" />
+            </ui:Button>
+
+            <!-- Exit to Menu Button -->
+            <ui:Button name="ExitMenuButton" class="menu-button">
+                <ui:Label text="Exit to Menu" class="button-text" />
+            </ui:Button>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>
